@@ -51,7 +51,7 @@ class TextToImageGenerator:
             print("Please enter some text.")
 
 def main():
-    root = tk.Tk()
+    root = tk.Tk() 
     app = TextToImageGenerator(root)
     root.mainloop()
 
