@@ -9,7 +9,7 @@ class TextToImageGenerator:
         self.root = root
         self.root.title("Textination")
 
-        # Create Stable Diffusion Pipeline
+        # Create Stable Diffusion Pipeline 
         self.model_id = "CompVis/stable-diffusion-v1-4"
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.pipeline = StableDiffusionPipeline.from_pretrained(self.model_id, revision="fp16")
